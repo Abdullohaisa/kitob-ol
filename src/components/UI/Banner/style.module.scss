@@ -1,0 +1,22 @@
+.banner {
+  display: flex;
+  padding: 60px 0px 0px 60px;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  .title {
+    min-width: 567px;
+    color: white;
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .image {
+    height: 500px;
+    img {
+      height: 50%;
+    }
+  }
+}
