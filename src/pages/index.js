@@ -1,6 +1,5 @@
-import { Main } from '@/components/Pages/Main'
+import Main from '@/components/Pages/Main'
 import SEO from '@/components/SEO'
-import { fetchMultipleUrls } from '@/services/fetchMultipleUrls'
 
 export default function Home({ data }) {
   return (
@@ -11,13 +10,3 @@ export default function Home({ data }) {
   )
 }
 
-// export async function getServerSideProps(context) {
-//   const urls = ['/posts']
-//   const data = await fetchMultipleUrls(urls)
-
-//   return {
-//     props: {
-//       data
-//     }
-//   }
-// }

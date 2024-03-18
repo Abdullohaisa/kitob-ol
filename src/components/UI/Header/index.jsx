@@ -1,31 +1,11 @@
-import { Container } from '@mui/material'
-import useTranslation from 'next-translate/useTranslation'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import styles from './style.module.scss'
+import React from 'react'
 
-export default function Header() {
-  const router = useRouter()
-  const { t } = useTranslation('common')
-  const langs = [
-    {
-      key: 'ru',
-      label: 'ru'
-    },
-    {
-      key: 'uz',
-      label: 'uz'
-    },
-    {
-      key: 'en',
-      label: 'en'
-    }
-  ]
+const Header = () => {
   return (
-    <header className={styles.header}>
-      <Container>
-        awdawdawd
-      </Container>
-    </header>
+    <div>
+      Header
+    </div>
   )
 }
+
+export default Header
