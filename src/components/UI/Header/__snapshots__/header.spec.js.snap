@@ -16,7 +16,7 @@ exports[`About component should render Footer component 1`] = `
           href="/"
         >
           <h2>
-            Logo
+            Logow
           </h2>
         </a>
         <nav>
