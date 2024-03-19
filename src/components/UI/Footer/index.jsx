@@ -1,13 +1,46 @@
 import React from 'react'
 import scr from './style.module.scss'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
     <footer className={scr.footer}>
       <div className="container">
-        <div className={scr.topFooter}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptatum ad beatae nesciunt quam quia officiis ut tempore delectus tenetur natus, dignissimos corrupti cumque molestiae dolorum eius exercitationem consequuntur accusamus repellendus qui sit tempora quo non totam. Pariatur debitis maiores qui amet nam sint quo eius ad illum dolores aperiam aliquam voluptates minus expedita ipsa, reprehenderit soluta est animi obcaecati? Delectus nam, nobis architecto non eaque laudantium impedit soluta sapiente sed mollitia aliquam quod veniam nesciunt nemo, illum, fugit ad maiores nisi? Et odio distinctio ipsam illo voluptate sapiente consequatur iusto minus dignissimos accusantium. Debitis labore nulla incidunt eligendi nemo totam dolorem voluptas accusamus, possimus quo, eius veniam voluptatum laborum voluptate, voluptatibus ab. Incidunt, eius maiores animi pariatur velit nobis magni suscipit temporibus iure natus nulla nam quibusdam ad cumque nihil, possimus a corrupti? Deleniti, quibusdam. Impedit totam illo aperiam delectus ratione dolorem ipsa, doloribus, praesentium cum, magni architecto! Aliquid nesciunt, perspiciatis hic amet reprehenderit voluptas adipisci placeat earum tempora quam ullam animi possimus accusantium rem deserunt exercitationem cumque blanditiis minima provident impedit rerum natus iste. Dolore sapiente aliquid dolor optio soluta asperiores sint, doloremque tempora quis in recusandae ex facilis corrupti ut corporis nemo, consequatur assumenda repudiandae expedita sunt quam? Animi veritatis enim blanditiis sed dolor tempore, quia, ratione unde id deserunt, recusandae magnam officiis. Nemo earum rerum a similique quae laboriosam, tempora assumenda error nulla minus porro. Maiores aut laboriosam nobis atque alias provident omnis magnam cupiditate illum ipsam odit voluptas asperiores quam hic totam eum quaerat, temporibus dolorum commodi enim! Eaque quo ex beatae dolores ea! Molestiae, laudantium facilis! Odit nulla neque facilis, earum voluptatibus repellat. Ducimus quis ad quisquam! Accusantium magni nostrum incidunt consectetur maiores hic harum excepturi, eligendi vero eius eum fuga, dolorum sed modi. Alias, veniam cum impedit, temporibus voluptates dolores soluta magni, atque ea nemo officia porro nam animi veritatis iure voluptatum sapiente iusto quod. Eum vel rerum pariatur praesentium libero quaerat sint cum sapiente eveniet. Accusantium, quidem sint nesciunt obcaecati tempore quasi possimus dolore fuga minus quia repellendus. Minima, mollitia repellat. Perspiciatis non sit fugiat voluptatum odio sed numquam nihil iusto accusantium accusamus tempore, quae voluptatem nulla omnis ratione dolores odit ducimus. Adipisci, perspiciatis quasi doloremque, laborum nam eius debitis soluta sunt delectus quam libero ipsa. Corrupti commodi maiores, quas possimus dolorum assumenda odio neque eveniet cupiditate accusamus reiciendis quia explicabo. Debitis voluptatibus eligendi commodi distinctio ipsum voluptates eum iure enim, est, minima eos tempora nulla minus? Iste dolore nesciunt in quam impedit beatae doloribus esse amet expedita, quisquam quas eligendi earum atque. Iusto dolore velit minus veniam ipsum veritatis facilis necessitatibus beatae nulla est, recusandae ipsa ipsam aspernatur laborum possimus, esse, ut deserunt assumenda ratione alias dolor aliquam soluta blanditiis cum! Delectus aliquid, rerum assumenda, deserunt labore sint veritatis harum animi voluptatem et velit magni odio eius deleniti earum libero, natus ipsa sit nulla officiis voluptate. Aliquam, blanditiis? Odio cupiditate ut est neque blanditiis quia magni voluptate aliquam, modi reprehenderit voluptatibus numquam quasi, vel rem porro! Natus veniam eum odio consequatur dolores cum numquam libero laudantium! Quas beatae nihil id ea a voluptatibus tempora pariatur quibusdam quam deleniti quos sit expedita aspernatur consequuntur itaque, doloremque, doloribus ab eius incidunt illo eum. Quae cum ducimus impedit omnis exercitationem at, quos qui quidem excepturi itaque earum sequi facilis odio facere odit corrupti neque cupiditate illum ipsum. Nobis error vitae fugit quia sequi sed eveniet soluta, veniam nam nostrum sint velit quasi corporis eos magnam sit tenetur quaerat ipsa neque id consequatur incidunt ipsum? Molestias porro facilis quaerat quia asperiores. Odio similique rem esse quibusdam, modi consectetur saepe consequuntur explicabo et libero sequi commodi eum eaque, fuga unde incidunt neque dolorem in. Non rerum qui nostrum assumenda accusantium voluptates, ullam suscipit sapiente omnis blanditiis odit iste tempore fuga? Perferendis molestiae aliquid magni perspiciatis sint molestias quae, accusamus culpa obcaecati totam, voluptatibus quaerat eligendi voluptate iste quis, cumque cum dolorum neque sunt eum praesentium quam asperiores est itaque! Nesciunt molestias non soluta mollitia illum pariatur expedita dicta ipsa tenetur atque dolor perferendis aliquam, ut necessitatibus earum nam autem ipsum, architecto obcaecati sit et quasi sequi assumenda! Voluptates quia voluptate exercitationem a, vero harum quod molestiae quam aspernatur aperiam itaque ab iusto veritatis! Nihil aliquid nostrum adipisci blanditiis dolorem. Quas voluptatum excepturi fugit et id accusamus architecto minima, mollitia magni debitis maiores, odio sit hic voluptas ad itaque, sequi sint pariatur repellendus quam fuga necessitatibus? Hic odio inventore atque provident distinctio, saepe quod nostrum sed, est expedita quibusdam nulla at quaerat neque deserunt modi labore natus libero incidunt perferendis ratione minus possimus nesciunt. Accusantium ratione illum soluta alias corrupti eveniet culpa quidem aperiam, distinctio, quasi nobis sed quos repellendus perspiciatis sunt. Sunt deserunt alias, cupiditate dicta aspernatur dolorum iste ratione tempore, magni temporibus exercitationem ad, quisquam minima ex obcaecati dolores corporis debitis distinctio! Animi esse possimus cum veniam delectus iure soluta odio ducimus temporibus tempore facilis doloribus mollitia quibusdam placeat perspiciatis itaque modi iusto assumenda, incidunt, sed nemo aut quo officia error? Aperiam cumque nam asperiores atque minima totam quibusdam voluptates corporis officiis facilis libero velit dignissimos, perspiciatis hic, adipisci quasi molestiae iste iure, repudiandae officia recusandae quam praesentium harum impedit! Veritatis velit, eligendi omnis nihil possimus voluptatum odit ratione iure tenetur nam vel ab veniam neque nobis, doloremque consectetur itaque beatae! Tenetur animi perspiciatis assumenda quae enim at neque labore quia quisquam? Accusamus, perspiciatis! Vitae veniam, cupiditate quae qui atque recusandae eum deleniti fugiat, hic, dolore enim nostrum sequi rerum cumque voluptates. Nam ipsam modi et provident eveniet cupiditate error aut doloribus dignissimos tenetur excepturi quisquam voluptates, delectus non distinctio culpa dolorem! Corporis quibusdam aliquam ad deserunt velit commodi a, obcaecati labore error ut consectetur quaerat facere repudiandae, assumenda quia tenetur sequi reprehenderit maxime. Repudiandae, earum minus cupiditate atque rem illo voluptas perspiciatis. Ratione quod impedit quasi reiciendis iusto dicta rem ea assumenda? Optio nihil molestiae distinctio quidem quasi atque quaerat? Magni ratione tempora reiciendis nulla voluptatem sequi ex. Minus iure vitae ab eligendi, natus necessitatibus voluptate, a, suscipit odio error aliquam et consequatur iste.</div>
-        <div className={scr.bottomFooter}></div>
+        <div className={scr.topFooter}>
+          <ul>
+            <li>
+              <Link href="/test">
+               <img src="/images/logo.1.png" alt="" />
+              </Link>
+            </li>
+            <li>Onlayn platformaga tegishli barcha materiallar "Kitob Ol" MCHJning mulki hisoblanadi. Ushbu Saytdan kitob ayrboshlashdan tashqari boshqa maqsadlarda foydalanish qonunan man etiladi.</li>
+          </ul>
+          <ul>
+              <span>
+                <Link href="/test"> Ommaviy oferta </Link>
+              </span>
+              <span>
+                <Link href="/test">Sayt haqida</Link>
+              </span>
+              <span>
+                <Link href="/test">Yo'riqnoma</Link>
+              </span>
+          </ul>
+          <ul>77 787 88 77</ul>
+        </div>
       </div>
+        <div className={scr.bottomFooter}>
+          <div className="container">
+            <ul>
+              <li>
+                  Copywright R 2023
+              </li>
+              <li>
+                  Designed by: <span>Nasibjon</span>
+              </li>
+            </ul>
+          </div>
+        </div>
     </footer>
   )
 }
