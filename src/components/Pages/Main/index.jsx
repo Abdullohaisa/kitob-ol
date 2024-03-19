@@ -6,10 +6,10 @@ const Main = () => {
   
 
   return (
-    <div className="container">
-      <div className={""}>
+    <div>
+    
         <Banner/>
-      </div>
+      
     </div>
   );
 };
