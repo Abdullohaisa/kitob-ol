@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import s from './style.module.scss'
-import BookWorkBtn from "@/components/UI/Book|Work.btn/book.work.btn";
+import BookWorkBtn from "@/components/UI/BookWork.btn/book.work.btn";
 import FilterBook from "@/components/UI/Filter/FilterBook";
 import ProductBox from "@/components/UI/Products/Product-Box";
 
