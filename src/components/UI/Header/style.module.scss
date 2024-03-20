@@ -2,14 +2,13 @@
 .header {
     width: 100%;
     height: 82px;
+    background-color: var(--back-color);
+    z-index: 5;
 
-    margin-top: 60px;
     margin-bottom: 40px;
 
     display: flex;
     align-items: center;
-    background: white;
-    box-shadow: 0px 1px 15px 1px white;
 
     position: sticky;
     top: 0px;
@@ -73,7 +72,6 @@
 
 @media screen and (max-width: 1500px) {
     .header {
-      margin-top: 40px;
       margin-bottom: 25px;
       height: 60px;
 
@@ -100,7 +98,6 @@
 
 @media screen and (max-width: 950px) {
     .header {
-      margin-top: 10px;
       margin-bottom: 17px;
       height: 48px;
 

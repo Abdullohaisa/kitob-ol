@@ -1,0 +1,26 @@
+.input {
+    height: 56px;
+    border-radius: 2px 0px 0px 0px;
+    border: none;
+    background: rgba(44, 48, 51, .1);
+    padding: 20px;
+    outline-color: silver;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.36px;
+    text-align: left;
+
+}
+
+.input::placeholder {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.36px;
+    text-align: left;
+    color: rgba(44, 48, 51, 0.538);
+    opacity: 80%;
+
+}

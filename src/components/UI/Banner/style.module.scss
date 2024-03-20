@@ -1,22 +1,91 @@
-.banner {
-  display: flex;
-  padding: 60px 0px 0px 60px;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-  .title {
-    min-width: 567px;
-    color: white;
-    font-family: Inter;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 77px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .image {
-    height: 500px;
-    img {
-      height: 50%;
+.root {
+    position: relative;
+    width: 100%;
+  
+    .slideItem {
+      height: rem(336);
+      background: var(--white-color);
+      border-radius: rem(15);
+      overflow: hidden;
+      .box {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: rem(10);
+        .left {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: rem(53) rem(46);
+          @media (max-width: 768px) {
+            padding: rem(24);
+          }
+  
+          .title {
+            // max-width: 80%;
+            font-weight: 700;
+            font-size: rem(48);
+            line-height: rem(58);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            & > * {
+              display: inline;
+            }
+  
+            @media (max-width: 768px) {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+          .text {
+            margin-top: rem(16);
+            font-weight: 400;
+            font-size: rem(16);
+            line-height: rem(26);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            & > * {
+              display: inline;
+            }
+  
+            @media (max-width: 768px) {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+          .btn {
+            margin-top: auto;
+            justify-content: center;
+            min-width: rem(174);
+            @media (max-width: 768px) {
+              min-width: rem(144);
+              border-radius: rem(12);
+            }
+          }
+        }
+        .right {
+          position: relative;
+          .img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .sliderDots {
+      width: rem(34);
+      height: rem(3);
+      background: #f0f0f0;
+      border-radius: rem(12);
     }
   }
-}
+
+
+

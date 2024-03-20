@@ -1,16 +1,21 @@
 import { useEffect, useState } from "react";
-import style from "./style.module.scss";
-import Banner from "@/components/UI/Banner";
+import s from './style.module.scss'
+import BookWorkBtn from "@/components/UI/Book|Work.btn/book.work.btn";
+import FilterBook from "@/components/UI/Filter/FilterBook";
+import ProductBox from "@/components/UI/Products/Product-Box";
 
 const Main = () => {
   
 
   return (
-    <div>
-    
-        {/* <Banner/> */}
-      
-    </div>
+   <div className={s.main}>
+      <div className="container">
+          {/* <Banner/> */}
+         <BookWorkBtn/>
+         <FilterBook/>
+         <ProductBox/>
+      </div>
+   </div>
   );
 };
 
