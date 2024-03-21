@@ -8,7 +8,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
-const Header = () => {
+const Header = ({open}) => {
   return (
     <div className={scr.header}>
      <div className="container">
@@ -22,7 +22,7 @@ const Header = () => {
          <button>E'lon berish</button>
          </ul>
          {/* res */}
-          <p><MenuOutlinedIcon/></p>
+          <p onClick={() => open()}><MenuOutlinedIcon/></p>
          {/* res */}
        </nav> 
      </div>

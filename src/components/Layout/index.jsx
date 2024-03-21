@@ -1,11 +1,22 @@
+import s from './style.module.scss'
+// UI
 import Footer from '@/components/UI/Footer'
 import Header from '@/components/UI/Header'
-import s from './style.module.scss'
+import SideBar from '../UI/SideBar'
+// HOOK
+import { useState } from 'react'
 
 export default function Layout({ children }) {
+
+  const [bar, setBar] = useState(false)
+
+  const barOpen = () => {
+    setBar( p => !p )
+  }
   return (
     <div className={s.layout}>
-      <Header />
+      <SideBar bar={bar} close={() => barOpen()}/>
+      <Header open={() => barOpen()} />
       {children}
       <Footer />
     </div>
