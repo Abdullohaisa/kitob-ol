@@ -1,19 +1,19 @@
-import Input from '../Input'
-import SelectFilter from '../Select'
+import Inputs from '../Input'
+import { SelectFilter, SelectInput, SliderFilter } from '../Select'
 import s from './style.module.scss'
 
 const FormFilter = () => {
   return (
     <form className={s.formFilter}>
-      <Input placeHolder='Kitob nomini kiriting'/>
-      <SelectFilter />
-      <Input placeHolder=''/>
-      <Input placeHolder='Kitob muallifi kiriting'/>
-      <Input placeHolder=''/>
-      <Input placeHolder='Manzil'/>
-      <Input placeHolder=''/>
-      <Input placeHolder='' />
-      <Input type='submit' placeHolder=''/>
+      <Inputs placeHolder='Kitob nomini kiriting'/>
+      <SelectFilter placeholder='Nashiryot tanlang' />
+      <SelectFilter placeholder='Til' />
+      <SelectInput />
+      <SliderFilter/>
+      <Inputs placeHolder='Manzil'/>
+      <SelectFilter placeholder='Kategoriya' />
+      <Inputs placeHolder='' />
+      <Inputs type='submit' placeHolder=''/>
     </form>
   )
 }

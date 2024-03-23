@@ -1,15 +1,29 @@
-
+import TextField from '@mui/material/TextField';
 import s from './Input.module.scss'
 
-const Input = ({type, placeHolder}) => {
+
+const Inputs = ({type, placeHolder}) => {
   return (
-    <input
+    <TextField
       className={s.input}
       type={type}
-      placeholder={placeHolder}
+      id="outlined-basic" 
+      label={placeHolder}
+      variant="outlined"
+      InputLabelProps={{ style: { color: '#929292' } }}
+      sx={{
+        outlineColor:"black",
+        borderRadius:"4px",
+        '& .MuiOutlinedInput-root': {
+          '& fieldset': {
+            borderWidth: '0', 
+          },
+        },
+      }}
+      
     />
       
   )
 }
 
-export default Input
+export default Inputs

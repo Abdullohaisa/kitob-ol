@@ -16,7 +16,7 @@ export default function Layout({ children }) {
   return (
     <div className={s.layout}>
       <SideBar bar={bar} close={() => barOpen()}/>
-      <Header open={() => barOpen()} />
+      <Header bar={bar} open={() => barOpen()} />
       {children}
       <Footer />
     </div>
