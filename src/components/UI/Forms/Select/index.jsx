@@ -1,15 +1,6 @@
 import { useState } from "react";
 import s from "./style.module.scss";
-import {
-  Autocomplete,
-  TextField,
-  Box,
-  MenuItem,
-  Slider,
-} from "@mui/material";
-import { Label } from "@mui/icons-material";
-
-
+import { Autocomplete, TextField, Box, MenuItem, Slider } from "@mui/material";
 
 const SelectFilter = ({ placeholder }) => {
   const [book, setBook] = useState("");
@@ -17,7 +8,7 @@ const SelectFilter = ({ placeholder }) => {
   return (
     <TextField
       className={s.input}
-      id="outlined-basic" 
+      id="outlined-basic"
       label={placeholder}
       variant="outlined"
       select={true}
@@ -42,7 +33,6 @@ const SelectFilter = ({ placeholder }) => {
   );
 };
 
-
 const SelectInput = () => {
   return (
     <Autocomplete
@@ -51,10 +41,7 @@ const SelectInput = () => {
       autoHighlight
       getOptionLabel={(option) => option.label}
       renderOption={(props, option) => (
-        <Box
-          sx={{ "& > img": { mr: 2, flexShrink: 0 } }}
-          {...props}
-        >
+        <Box sx={{ "& > img": { mr: 2, flexShrink: 0 } }} {...props}>
           {option.label} {option.phone}
         </Box>
       )}
@@ -83,46 +70,78 @@ const SelectInput = () => {
   );
 };
 
-function valuetext(value) {
-  return `${value}°C`;
-}
-
-const SliderFilter = () => {
-  const [value, setValue] = useState([20, 37]);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+const SliderFilter = ({ setPrice, price }) => {
+  const handleChange = (event, newPrice) => {
+    setPrice(newPrice);
   };
 
   return (
-     <Box>
-        <label>Narxlari</label>
-       <Slider
-        getAriaLabel={() => 'Temperature range'}
-        value={value}
+    <div className={s.slider}>
+      <label>Narx</label>
+      <Slider
+        min={0}
+        max={1000000}
+        step={10000}
+        value={price}
         onChange={handleChange}
         valueLabelDisplay="auto"
-        getAriaValueText={valuetext}
-        InputLabelProps={{ style: { color: '#929292' } }}
+        marks={[]}
         sx={{
-          outlineColor:"black",
-          borderRadius:"4px",
-          '& .MuiOutlinedInput-root': {
-            color:"chocolate",
-            '& fieldset': {
-              borderWidth: '0', 
-              color:"chocolate"
+          outlineColor: "black",
+          borderRadius: "4px",
+          "& .MuiSlider-thumb": {
+            color: "white",
+            border: "4px solid #1C2D3F", // Thumb rangi
           },
-        },
-      }}
+          "& .MuiSlider-rail": {
+            backgroundColor: "silver", // Yorlig'i rangi
+          },
+          "& .MuiSlider-track": {
+            backgroundColor: "#1C2D3F",
+            height: "5px", // Orqa tomoni rangi
+          },
+          "& .MuiSlider-valueLabel": {
+            color: "white", // Qiymat belgisi rangi
+          },
+        }}
       />
-     </Box>
+    </div>
   );
-}
+};
 
-export { SelectFilter, SelectInput, SliderFilter };
+const SliderInput = ({ price, setPrice }) => {
+  const [minPrice, setMinPrice] = useState(price[0]);
+  const [maxPrice, setMaxPrice] = useState(price[1]);
 
+  const handleMinPriceChange = (e) => {
+    const newMinPrice = e.target.value;
+    setMinPrice(e.target.value);
+    setPrice([e.target.value, maxPrice]);
+  };
 
+  const handleMaxPriceChange = (e) => {
+    const newMaxPrice = e.target.value;
+    setMaxPrice(e.target.value);
+    setPrice([minPrice, e.target.value]);
+  };
+
+  return (
+    <div style={{display:"flex", alignItems:"center"}}>
+      <input 
+         value={minPrice}
+         onChange={handleMinPriceChange}
+         className={`${s.inputPrice} ${s.left}`}
+          />
+      <input 
+         value={maxPrice} 
+         onChange={handleMaxPriceChange}
+         className={`${s.inputPrice} ${s.right}`}
+          />
+    </div>
+  );
+};
+
+export { SelectFilter, SelectInput, SliderFilter, SliderInput };
 
 const countries = [
   { code: "", label: "Muhammad Yusuf", phone: "" },

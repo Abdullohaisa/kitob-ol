@@ -1,7 +1,7 @@
 .productBox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 50px;
     gap: 30px 30px;
 }
@@ -43,6 +43,11 @@
 }
 
 @media screen and (max-width:800px) {
+
+    .productBox {
+        justify-content: center;
+    }
+
     .productBoxBtn {
         margin-top: 40px;
         gap: 10px;

@@ -2,7 +2,7 @@ import TextField from '@mui/material/TextField';
 import s from './Input.module.scss'
 
 
-const Inputs = ({type, placeHolder}) => {
+const Inputs = ({type, placeHolder, style}) => {
   return (
     <TextField
       className={s.input}

@@ -5,10 +5,33 @@
     background: rgba(44, 48, 51, .1);
     padding: 0px 20px;
     outline-color: silver;
-
     font-family: Inter;
     font-size: 16px;
     font-weight: 300;
     line-height: 19.36px;
     text-align: left;
+}
+
+.inputPrice {
+    background: rgba(44, 48, 51, .1);
+    border: none;
+    width: 100%;
+    padding: 0px 15px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22.36px;
+    text-align: left;
+    color: #2F2F2F;
+    height: 56px;
+    outline:none;
+}
+
+.left {
+    border-radius: 4px 0px 0px 4px ;
+    border-right: 1px solid silver;
+}
+
+.right {
+    border-radius: 0px 4px 4px 0px ;
 }

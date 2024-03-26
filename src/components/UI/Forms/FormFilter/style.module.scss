@@ -1,15 +1,24 @@
 .formFilter {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid: auto-flow / 1fr 1fr 1fr ;
     gap: 30px 4vw;
-    flex-wrap: wrap;
     margin-top: 40px;
 
-    input:nth-child(9) {
-          display: flex;
+    .btn {
+            display: flex;
             justify-content: center;
+            align-items: center;
             background: rgba(44, 48, 51, 1);
             color: white;
+            border: none;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24.2px;
+            text-align: left;
+            height: 56px;
     }
 }
 
@@ -18,7 +27,7 @@
         grid-template-columns: auto auto;
         margin-top: 30px;
 
-        input:nth-child(9) {
+        .btn {
             grid-column-start:1 ;
             grid-column-end:3 ;
           
@@ -31,15 +40,9 @@
         grid-template-columns: auto ;
         margin-top: 20px;
 
-        input {
-            background-color: white;
-            border: 1px solid rgba(121, 116, 126, 1);
-            border-radius: 4px;
-        }
-
-        input:nth-child(9) {
-            grid-column-start:1 ;
-            grid-column-end:1 ;
+        .btn {
+            grid-column-start: 1;
+            grid-column-end: 1;
         }
     }
 }

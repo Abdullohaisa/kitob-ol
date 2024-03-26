@@ -5,6 +5,7 @@
     margin-top: 40px;
     padding: 35px 30px 35px 30px ;
     transition: .3s;
+    border-radius: 10px;
 
     p  {
         font-family: Inter;
@@ -30,5 +31,13 @@
             text-align: left;
 
         }
+    }
+}
+
+
+@media screen and (max-width: 900px)  {
+    .filterBook {
+        background: #F8F8F8;
+
     }
 }
