@@ -1,8 +1,12 @@
 .formFilter {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid: auto-flow / 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px 4vw;
+    grid-template-areas: 
+    "item1 item1 tem1" 
+    "item1 item1 tem3" 
+    "item1 item2 tem1" 
+    ;
     margin-top: 40px;
 
     .btn {

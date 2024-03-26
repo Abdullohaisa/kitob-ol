@@ -35,3 +35,26 @@
 .right {
     border-radius: 0px 4px 4px 0px ;
 }
+
+.inputPriceBox {
+    display: flex;
+    align-items: center;
+    grid: 3;
+    // grid-column-start:2 ;
+    // grid-column-end:1 ;
+}
+
+
+
+@media screen and (min-width: 902px)  {
+    .inputWhite {
+        background-color: rgba(44, 48, 51, .1);
+    }
+}
+
+
+@media screen and (max-width: 900px)  {
+    .inputWhite {
+        background-color: white;
+    }
+}

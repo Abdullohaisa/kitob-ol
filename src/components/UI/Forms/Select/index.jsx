@@ -7,7 +7,7 @@ const SelectFilter = ({ placeholder }) => {
 
   return (
     <TextField
-      className={s.input}
+      className={`${s.input} ${s.inputWhite}`}
       id="outlined-basic"
       label={placeholder}
       variant="outlined"
@@ -36,6 +36,7 @@ const SelectFilter = ({ placeholder }) => {
 const SelectInput = () => {
   return (
     <Autocomplete
+      className={s.inputWhite}
       id="country-select-demo"
       options={countries}
       autoHighlight
@@ -57,7 +58,7 @@ const SelectInput = () => {
           sx={{
             outlineColor: "black",
             borderRadius: "4px",
-            background: "#2c30331a",
+           
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 borderWidth: "0",
@@ -126,16 +127,16 @@ const SliderInput = ({ price, setPrice }) => {
   };
 
   return (
-    <div style={{display:"flex", alignItems:"center"}}>
+    <div className={s.inputPriceBox}>
       <input 
          value={minPrice}
          onChange={handleMinPriceChange}
-         className={`${s.inputPrice} ${s.left}`}
+         className={`${s.inputPrice} ${s.left} ${s.inputWhite}`}
           />
       <input 
          value={maxPrice} 
          onChange={handleMaxPriceChange}
-         className={`${s.inputPrice} ${s.right}`}
+         className={`${s.inputPrice} ${s.right} ${s.inputWhite}`}
           />
     </div>
   );
