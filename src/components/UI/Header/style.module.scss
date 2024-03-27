@@ -1,5 +1,5 @@
 
-.header {
+.header  {
     width: 100%;
     height: 82px;
     background-color: var(--back-color);
@@ -9,9 +9,6 @@
 
     display: flex;
     align-items: center;
-
-    position: sticky;
-    top: -10px;
    
    nav {
     display: flex;
@@ -70,7 +67,7 @@
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
     .header {
       margin-bottom: 25px;
       height: 60px;
@@ -94,22 +91,30 @@
 
       }
     }
+
+    .headerDown {
+      position: sticky;
+      top: 0px;
+      transition: .3s;
+    }
+
 }
 
 @media screen and (max-width: 950px) {
     .header {
-      margin-bottom: 17px;
-      height: 55px;
+      margin-bottom: 0px;
+      height: 70px;
       background-color: white;
-      border-bottom: 0.5px solid silver;
-      box-shadow: 0px 5px 10px 1px rgba(255, 255, 255, 0.135);
+      position: sticky;
+      top: 0px;
+      // background-color: aqua;
+      
 
       nav {
         display: flex;
         align-items: center;
         height: 48px;
         padding: 5px 0px ;
-        // background-color: silver;
 
         img {
           height: 120%;
@@ -131,4 +136,21 @@
         }
       }
     }
+
+    .headerDown {
+      position: sticky;
+      top: -70px;
+      transition: .3s;
+    }
+
+    .headerUp {
+      position: sticky;
+      top: 0px;
+      transition: .3s;
+      border-bottom: 1px solid silver;
+      // height: 70px;
+      // background-color: red;
+    }
+
+    
 }

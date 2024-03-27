@@ -50,7 +50,7 @@ function Banner() {
     },
   };
 
-  console.log("rasm", data);
+  // console.log("rasm", data);
 
   return (
    <div className={s.mainRoot}>
