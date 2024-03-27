@@ -17,7 +17,7 @@ function Banner() {
         "http://test.kitob-ol.uz:8080/api/download/banner?image_type=work"
       );
       const jsonData = await response.json();
-      setData(jsonData.data.images); 
+      setData(jsonData.data.images);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -27,29 +27,56 @@ function Banner() {
     dots: true,
     infinite: true,
     speed: 500,
+    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    speed: 500,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    arrows: false,
+    customPaging: function (i) {
+      return (
+        <div
+        className={s.slickDote}
+          style={{
+            width: "12px",
+            borderRadius:"12px",
+            background:"white", // O'zingizning talablarizga mos ravishda dotning hajmini o'zgartiring
+            height: "12px", // O'zingizning talablarizga mos ravishda dotning hajmini o'zgartiring
+            backgroundColor: "gray", // Dot rangi // Dotning kengligi
+          }}
+        ></div>
+      );
+    },
   };
 
-  console.log("rasm", data)
+  console.log("rasm", data);
 
   return (
-    <div className={s.root}>
-    {data && Array.isArray(data) && data.length > 0 && (
-      <Slider {...settings}>
-        {data.map((el, i) => (
-          <div key={i} className={s.slideItem}>
-            
-              <img className="s.img" src={el.file} alt="banner" />
-          
-          </div>
-        ))}
-      </Slider>
-    )}
-  </div>
+   <div className={s.mainRoot}>
+     <div className={s.root}>
+      {data && Array.isArray(data) && data.length > 0 && (
+        <Slider className={s.slider} {...settings}>
+          {data.map((el, i) => (
+            <div className={s.item} key={i}>
+
+                 
+                    <p className={s.bannerTitle}>It is never late to start reading!</p>
+                    <button>Ko'proq Ko'rish</button>
+              
+                    <img className={s.img} src={el.file} alt="Banner" />
+
+            </div>
+          ))}
+        </Slider>
+      )}
+    </div>
+   </div>
   );
 }
 
 export default Banner;
 
-{/* <img src={data?.data.images[0].file} alt="banner" /> */}
+{
+  /* <img src={data?.data.images[0].file} alt="banner" /> */
+}
