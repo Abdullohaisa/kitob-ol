@@ -129,11 +129,13 @@ const SliderInput = ({ price, setPrice }) => {
   return (
     <div className={s.inputPriceBox}>
       <input 
+         type="number"
          value={minPrice}
          onChange={handleMinPriceChange}
          className={`${s.inputPrice} ${s.left} ${s.inputWhite}`}
           />
       <input 
+         type="number"
          value={maxPrice} 
          onChange={handleMaxPriceChange}
          className={`${s.inputPrice} ${s.right} ${s.inputWhite}`}
