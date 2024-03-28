@@ -38,7 +38,7 @@ const Header = ({ open, bar }) => {
             <li><Link href='favourite'><NotificationsNoneOutlinedIcon /></Link></li>
             <li><Link href='favourite'><PersonOutlineOutlinedIcon /></Link></li>
             <li><Link href='favourite'><PublicIcon /></Link></li>
-            <button>E'lon berish</button>
+            <Link href='announce.registration'><button>E'lon berish</button></Link>
           </ul>
           <p onClick={() => open()}>{bar ? <ClearIcon /> : <MenuOutlinedIcon />}</p>
         </nav>

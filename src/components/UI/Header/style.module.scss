@@ -140,14 +140,14 @@
     .headerDown {
       position: sticky;
       top: -70px;
-      transition: .5s;
+      transition: .9s;
     }
 
     .headerUp {
       position: sticky;
       top: -1px;
-      transition: .5s;
-      border-bottom: 1px solid silver;
+      transition: 1s;
+      // border-bottom: 1px solid silver;
       border-radius: 0px 0px 20px 20px ;
       box-shadow: 0px 0px 10px .1px rgb(0, 0, 0);
     }

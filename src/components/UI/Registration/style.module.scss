@@ -1,0 +1,305 @@
+.registerPage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: silver;
+
+    .icon {
+        transition: .4s;
+    }
+
+    .icon:hover, .icon:active {
+      transform: scale(1.5);
+      border-radius: 5px;
+      color: black;
+    }
+
+    span {
+        color: black;
+    }
+    
+}
+
+.register {
+    margin-top: 45px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    p {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 33.89px;
+        text-align: left;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 4px;
+        padding: 80px 40px 40px 40px ;
+        margin-top: 10px;
+        position: relative;
+
+        p {
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38.73px;
+            text-align: left;
+            color: #2C3033;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 25px; 
+            // background-color: silver;
+
+            label {
+                display: flex;
+                flex-direction: column;
+                font-family: Inter;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29.05px;
+                text-align: left;
+                margin-top: 15px;
+                
+                input {
+                    width: 83%;
+                    height: 56px;
+                    background: #F4F4F4;
+                    border: none;
+                    border-radius: 4px;
+                    margin-top: 24px;
+                    outline-color: silver;
+                    padding: 20px;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 19.36px;
+                    text-align: left;
+
+
+                }
+            }
+
+            button {
+                width: 83%;
+                height: 56px;
+                border-radius: 4px;
+                font-family: Inter;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24.2px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #2C3033;
+                border: none;
+
+            }
+        }
+
+        .userProfile {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #D9D9D9;
+            border-radius: 50%;
+            border: 10px solid #eeeeee;
+
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .userIcon {
+                transform: scale(1.6);
+            }
+    }
+}}
+
+
+@media screen and (max-width:1300px) {
+    .register {
+        margin-top: 35px;
+    
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33.89px;
+        }
+    
+        form {
+            border-radius: 4px;
+            padding: 30px;
+            margin-top: 0px;
+            padding: 70px 30px 30px 30px ;
+
+            p {
+                font-family: Inter;
+                font-size: 25px;
+                // display: none;
+            }
+
+            div {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 15px 30px; 
+    
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 29.05px;
+                    margin-top: 15px;
+                    
+                    input {
+                        width: 83%;
+                        height: 50px;
+                        background: #F4F4F4;
+                        border: none;
+                        border-radius: 4px;
+                        margin-top: 9px;
+    
+                    }
+                }
+    
+                div {
+                   display: flex;
+                   align-items: flex-end;
+
+                    button {
+                        width: 83%;
+                        height: 50px;
+                        border-radius: 4px;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24.2px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        background: #2C3033;
+                        border: none;
+        
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width:951px) {
+   .register {
+
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+           p{
+           }
+        }
+     }
+
+        form {
+            border-radius: 0px;
+            margin-top: 30px;
+            padding: 80px 0px 30px 0px ;
+            border-top: 2px solid silver;
+
+            div {
+                label {
+                    input {
+                        width: 100%;
+                    }
+                }
+               div {
+                button {
+                    width: 100%;
+                }
+               }
+            }
+            
+
+
+            .userProfile {
+                border: 10px solid #ffffff;
+                box-shadow: 0px 13px 10px 1px silver;
+            }
+        }
+   }
+}
+
+
+@media screen and (max-width:650px) {
+
+
+   .register {
+    margin-top: 20px;
+
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+           p{
+            font-size: 15px;
+           }
+        }
+     }
+
+
+
+        form {
+            border-radius: 0px;
+            margin-top: 60px;
+            padding: 80px 0px 30px 0px ;
+            border-top: 2px solid silver;
+
+            div {
+              grid-template-columns: repeat(1, 1fr); 
+                label {
+                    input {
+                        width: 100%;
+                    }
+                }
+               div {
+                button {
+                    width: 100%;
+                    margin-top: 48px;
+                }
+               }
+            }
+            
+
+
+            .userProfile {
+                border: 10px solid #ffffff;
+                box-shadow: 0px 13px 10px 1px silver;
+            }
+        }
+   }
+}
